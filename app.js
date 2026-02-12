@@ -69,7 +69,7 @@ ws.onopen = () => {
             const texto = input.value;
             if(texto.trim() !== ""){
                 //ws.send(idjugador + "ALLCLIENTS_LOG" + texto);
-                ws.send([nombre_usuario, "ALLCLIENTS_LOG" + texto]);
+                ws.send(JSON.stringify([nombre_usuario, "ALLCLIENTS_LOG" + texto]));
                 input.value = "";
             }
         }
@@ -79,13 +79,14 @@ ws.onopen = () => {
         const texto = input.value;
         if(texto.trim() !== ""){
             //ws.send(idjugador + "ALLCLIENTS_LOG" + texto);
-            ws.send([nombre_usuario, "ALLCLIENTS_LOG" + texto]);
+            ws.send(JSON.stringify([nombre_usuario, "ALLCLIENTS_LOG" + texto]));
             input.value = "";
         }
     });
 
 
 };
+
 
 
 
