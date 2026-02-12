@@ -7,7 +7,7 @@ ws.onmessage = (event) => {
     
 };
 
-
+console.log("Conectando con el servidor, si no va perate 20 segundos o algo yo que cojones se");
 //ejecuta al abrir la conexion
 ws.onopen = () => {
   const inputname = document.querySelector(`#userInputnombre`);
@@ -22,6 +22,7 @@ ws.onopen = () => {
         }
     });
 };
+
 
 
 
