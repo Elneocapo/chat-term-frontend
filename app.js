@@ -1,5 +1,5 @@
 
-console.log("version89");
+console.log("version102");
 //El navegador intenta conectarse al servidor. Es como marcar el número de teléfono.
 const ws = new WebSocket("wss://chat-term-servidor.onrender.com");
 //supongo que sustituyes localhost3000 por el url del servidor
@@ -92,6 +92,7 @@ ws.onopen = () => {
 
 
 };
+
 
 
 
