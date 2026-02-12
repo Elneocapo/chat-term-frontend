@@ -16,7 +16,7 @@ ws.onmessage = (event) => {
     console.log(event.data);
     event.data = event.data.toString();
     console.log(event.data);
-    let data_del_server = event.data;//.split(","); 
+    let data_del_server = [event.data[0], event.data[1]];//.split(","); 
     console.log(data_del_server)
 
     if(data_del_server.length === 1){
@@ -88,6 +88,7 @@ ws.onopen = () => {
 
 
 };
+
 
 
 
