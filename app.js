@@ -1,10 +1,12 @@
+
+console.log("version89");
 //El navegador intenta conectarse al servidor. Es como marcar el número de teléfono.
 const ws = new WebSocket("wss://chat-term-servidor.onrender.com");
 //supongo que sustituyes localhost3000 por el url del servidor
 const rejiondemensajes = document.querySelector('#mensajeria');
 
 
-const nombre_usuario = "default_name"; 
+let nombre_usuario = "default_name"; 
 nombre_usuario = localStorage.getItem('usuarioGuardado');
 
 const arraydecosas = [
@@ -90,6 +92,7 @@ ws.onopen = () => {
 
 
 };
+
 
 
 
