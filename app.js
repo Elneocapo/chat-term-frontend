@@ -3,7 +3,9 @@ const ws = new WebSocket("wss://chat-term-servidor.onrender.com");
 //supongo que sustituyes localhost3000 por el url del servidor
 const rejiondemensajes = document.querySelector('#mensajeria');
 
-const nombre_usuario = localStorage.getItem('usuarioGuardado');
+
+const nombre_usuario = "default_name"; 
+nombre_usuario = localStorage.getItem('usuarioGuardado');
 
 const arraydecosas = [
   '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
@@ -13,7 +15,7 @@ const arraydecosas = [
 
 //Aquí el cliente escucha mensajes que manda el servidor.
 ws.onmessage = (event) => {
-    console.log(event.data[0]);
+    console.log(event.data);
     event.data = event.data.toString();
     console.log(event.data);
     let data_del_server = [event.data[0], event.data[1]];//.split(","); 
@@ -88,6 +90,7 @@ ws.onopen = () => {
 
 
 };
+
 
 
 
