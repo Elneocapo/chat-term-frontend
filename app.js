@@ -13,7 +13,9 @@ const arraydecosas = [
 
 //Aquí el cliente escucha mensajes que manda el servidor.
 ws.onmessage = (event) => {
+    console.log(event.data);
     event.data = event.data.toString();
+    console.log(event.data);
     let data_del_server = event.data.split(","); 
     console.log(data_del_server)
 
@@ -86,6 +88,7 @@ ws.onopen = () => {
 
 
 };
+
 
 
 
