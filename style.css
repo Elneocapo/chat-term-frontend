@@ -1,0 +1,44 @@
+*{
+    color: white;
+    font-family:monospace;
+}
+.sendbutton{
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#userInput{
+    margin-top: 10px;
+    width: 500px;
+    height: 60px;
+    color: black;
+}
+.seccionmensajes{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+}
+#mensajeria{
+    margin-left: 10px;
+    margin-right: 10px;
+    height:85%;
+    overflow-wrap: break-word;
+    font-size: 18px;
+}
+.sendbuttonnombre{
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    color: black;
+}
+
+#userInputnombre{
+    color: black;
+}
